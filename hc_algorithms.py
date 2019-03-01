@@ -6,7 +6,11 @@ def sortImages(i):
 
 
 def matchVerticals(verticals):
-    return verticals
+    matched = []
+
+    # smart algorithm
+
+    return matched
 
 
 def match(slides):

@@ -1,7 +1,6 @@
 import sys
 from hc_io import read, write
-from hc_algorithms import createSlides, sortImages
-
+from hc_algorithms import createSlides, sortImages, matchVerticals
 
 if __name__ == "__main__":
     if len(sys.argv) < 1:
@@ -9,7 +8,7 @@ if __name__ == "__main__":
 
     filename = sys.argv[1]
 
-    images = read("in/" + filename)
+    images, tags = read("in/" + filename)
 
     verticals = [x for x in images if x.orientation == "V"]
     horizontals = [x for x in images if x.orientation == "H"]
